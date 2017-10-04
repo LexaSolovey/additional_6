@@ -20,18 +20,14 @@ module.exports = function zeros(expression) {
 }
 
 function factorialAcrossOne(number){
-  if (number%2 === 0) {
+  if (number%2 === 0)
     return parseInt(number/10) + parseInt(number/50);
-  }
-  if (number%2 !== 0 && number<10) {
+  if (number%2 !== 0 && number<10)
     return parseInt(number/5) + parseInt(number/25);
-  }
-  if (number%2 !== 0 && number>10 && number<50) {
+  if (number%2 !== 0 && number>10 && number<50) 
     return parseInt(number/5) - parseInt(number/10) + parseInt(number/25);
-  }
-  if (number%2 !== 0 && number>10 && number>=50) {
+  if (number%2 !== 0 && number>10 && number>=50)
     return parseInt(number/5) - parseInt(number/10) + parseInt(number/25) - 1;
-  }
 }
 
 function getFactorialOfOneItem(str){
